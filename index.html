@@ -15,7 +15,7 @@
         <nav>
             <a href="index.html"><img src="./images/logo.png" alt=""></a>
             <div class="nav-link" id="navLinks">
-                <i class="fa-solid fa-circle-xmark" onclick="hidemenu()"></i>
+                <i class="fa-solid close-bar fa-circle-xmark" onclick="hidemenu()"></i>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -29,7 +29,7 @@
         <div class="text-box">
             <h1>Woeld's Biggest Univercity</h1>
             <p>A university is a higher learning institution. The word university comes from the Latin universitas magistrorum et scholarium, roughly meaning "community of teachers and scholars". Students can go to university to get an academic degree.</p>
-            <a href="" class="hiro-btn">Visit Us To Know More</a>
+            <a href="#" class="hiro-btn">Visit Us To Know More</a>
         </div>
     </section>
 
@@ -145,11 +145,20 @@
                 </div>
             </section>
 
+            <!-- call to action  -->
+            <section class="cta">
+                <h1>Enroole For Ur Various Online Courses Anywhare Form The World </h1>
+                <a href="" class="hiro-btn">Contact Us</a>
+            </section>
+
     <!-- javasript for toggel menu -->
     <script>
         var navLinks = document.getElementById("navLinks");
         function showmenu(){
             navLinks.style.right ="0";
+            navLinks.style.display= "block";
+            // navLinks.style.width= "100%";
+            // navLinks.style.transition ="0.7s ";
             
         }
         function hidemenu(){
