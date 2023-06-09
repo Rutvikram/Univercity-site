@@ -57,7 +57,7 @@ nav img {
 }
 
 .nav-link ul li:hover::after {
-    width: 30%;
+    width: 100%;
 }
 
 .text-box {
@@ -292,7 +292,7 @@ p {
 /* --- call to action --- */
 
 .cta {
-    margin: 100px auto;
+    margin: 70px auto;
     width: 80%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.501), rgba(0, 0, 0, 0.501)), url(./images/banner2.jpg);
     background-position: center;
@@ -300,6 +300,11 @@ p {
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
+}
+
+.set-action {
+    width: 640px;
+    margin: 0 auto;
 }
 
 .cta h1 {
@@ -310,11 +315,70 @@ p {
 
 }
 
+/* ---Footer--- */
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer>h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons>.fa{
+    color: #31b3ff;
+    margin: 0 13px ;
+    cursor: pointer;
+    padding: 5px 5px;
+    border-radius: 5px;
+    transition: 0.5s ease-in;
+}
+
+.icons>.fa:hover{
+    color: #fff;
+    background-color: #31b3ff;
+}
+
+.fa-heart-o{
+    color: #f44336;
+
+}
+
+.container{
+    width: 950px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+}
+
+
+@media (max-width: 991.98px) { 
+    .set-action {
+        width: 550px;
+    }
+    .container{
+        width: 700px;
+        margin: 0 auto;
+    }
+
+ }
 
 @media(max-width:700px) {
+
+    .container{
+        width:100%;
+        margin: 0 auto;
+    }
     .text-box h1 {
         font-size: 18px;
 
+    }
+
+    .sub-header h1{
+        font-size: 24px;
     }
 
     .nav-link ul li {
@@ -376,6 +440,10 @@ p {
         padding: 50px 0;
     }
 
+    .set-action {
+        width: 100%;
+    }
+
     .cta h1 {
         font-size: 20px;
         letter-spacing: 2px;
@@ -383,8 +451,148 @@ p {
 }
 
 @media(max-width:350px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
     .hiro-btn {
         padding: 10px 20px;
         font-size: 12px;
     }
+
+    .set-action {
+        width: 100%;
+    }
+}
+
+
+/* ----------------------- About us page ----------------------- */
+
+.sub-header{
+    height: 60vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(./images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+
+}
+
+.sub-header>h1{
+    margin-top: 80px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+
+}
+
+.about-col>img{
+    width: 100%;
+}
+
+.about-col>h1{
+    padding: 0 ;
+}
+
+.about-col>p{
+    padding: 15px 0 25px;
+}
+
+.blue-btn{
+ border: 1px solid #31b3ff;   
+ color: #31b3ff;
+ font-weight: 800;
+ background: transparent;
+}
+
+.blue-btn:hover{
+    color: #fff;
+}
+
+
+/* ------------- blog content ------------- */
+
+.blog-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.blog-left{
+    flex-basis:65%;
+}
+.blog-left>img{
+    width: 100%;
+}
+
+.blog-left>h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+
+
+
+.blog-left>p{
+    color: #999;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.blog-right{
+    flex-basis: 32%;
+}
+
+.blog-right>h3{
+    text-align: center;
+    background: #31b3ff;
+    color: #fff;
+    padding: 7px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-right>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #555;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.comment-box{
+    border: 1px solid #ccc;
+    margin: 30px 0;
+    padding: 7px 15px;
+}
+
+.comment-box>h3{
+    text-align: left;
+}
+
+.comment-form>input,
+.comment-form>textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    background:#f0f0f0 ;
+}
+
+.comment-form>button{
+    margin: 10px 0;
+
 }

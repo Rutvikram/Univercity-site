@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Responsive</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png" alt=""></a>
+            <div class="nav-link" id="navLinks">
+                <i class="fa-solid close-bar fa-circle-xmark" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./course.html">Course</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Program For 2023</h1>
+
+    </section>
+
+    <!-------- Blog Page Content -------->
+    <section class="bolg-content">
+        <div class="container">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="./images/certificate.jpg" alt="certificate">
+                    <h2>Our Certificate & Online Program For 2023</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, nisi dignissimos eos quidem odio
+                        atque corporis voluptatum consequuntur unde vero libero! Nihil impedit unde autem a provident
+                        dolores pariatur eaque quasi deserunt, recusandae, id neque ducimus obcaecati rem ullam eveniet
+                        magni atque!</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem nesciunt autem odit
+                        similique iste alias eos vel unde voluptate amet repellat esse quo blanditiis eaque deleniti
+                        magni, magnam illo in, nam quaerat natus a. Asperiores, unde in aspernatur repellat quos rem
+                        temporibus similique qui aliquid odio, voluptatibus sapiente, nisi saepe reiciendis molestiae
+                        officiis placeat. Deserunt dolor esse vero quos nemo. Deleniti consequatur tempora, autem eius
+                        maiores repellendus magnam quo!</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae commodi quasi voluptatem
+                        reiciendis quibusdam, eum sunt vero totam? Qui officia autem deserunt veritatis exercitationem
+                        eveniet, accusamus illum delectus! Magnam vel vero explicabo eligendi non aut adipisci
+                        reprehenderit illum quo nam. At a nisi ipsam non dolore assumenda vero accusamus dignissimos!
+                        Dolores veniam voluptate praesentium non? Debitis ipsa asperiores tempore porro facilis animi
+                        explicabo quisquam assumenda natus. Asperiores at qui molestiae veritatis, perspiciatis dolores
+                        corporis? Obcaecati necessitatibus ipsum eaque officiis vel dignissimos omnis doloribus totam
+                        eligendi, reprehenderit quidem expedita quisquam!</p>
+                        <div class="comment-box">
+                            <h3>Live a comment</h3>
+                            <form class="comment-form" action="">
+                                <input type="text" placeholder="Enter Name" >
+                                <input type="email" placeholder="Enter Emali" >
+                                <textarea rows="5" placeholder="Your Comment" ></textarea>
+                                <button type="submit" class="hiro-btn blue-btn " >POST COMMENT</button>
+                            </form>
+                        </div>
+
+                </div>
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>22</span>
+                    </div>
+                    <div>
+                        <span>Data Science</span>
+                        <span>25</span>
+                    </div>
+                    <div>
+                        <span>Machine Lerning</span>
+                        <span>14</span>
+                    </div>
+                    <div>
+                        <span>Computer Science</span>
+                        <span>35</span>
+                    </div>
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>32</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>18</span>
+                    </div>
+                    <div>
+                        <span>Commerce</span>
+                        <span>30</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>Courses</h4>
+        <div class="set-action">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Enim eligendi officiis, iste obcaecati provident similique rem.
+                Dolorum. </p>
+        </div>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Rutvik Ram</p>
+
+    </section>
+
+    <!-- javasript for toggel menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showmenu() {
+            navLinks.style.right = "0";
+            navLinks.style.display = "block";
+            // navLinks.style.width= "100%";
+            // navLinks.style.transition ="0.7s ";
+
+        }
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/7a7d133fae.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
